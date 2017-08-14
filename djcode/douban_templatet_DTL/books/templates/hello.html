@@ -1,0 +1,25 @@
+<html>
+	<body>
+	<h1>
+	<!--
+		hello this is {{books_name}}
+		hello this is {{books_name}}
+		hello this is {{books_name}}
+	-->
+	<!--	welcome view {{books_name.name}}-->
+
+{%comment%}
+	{%if books_name == 'python'%}
+		welcome view {{books_name}}
+	{%endif%}	
+{%endcomment%}
+	
+{%for i in books_name%}
+<li>{{i}}</li>
+{%endfor%}
+
+
+		
+	</h1>
+	</body>
+</html>
